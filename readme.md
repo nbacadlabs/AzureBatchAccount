@@ -1,3 +1,6 @@
+
+## Image gallery creation
+
 Prerequisite: 
 -	VM is created 
 -	VM is deallocated
@@ -56,3 +59,20 @@ az sig image-version create \
 --target-regions "eastus=1=standard_zrs" \
 --replica-count 1 \
 --virtual-machine "/subscriptions/$subscription/resourceGroups/$resourcegroup$/providers/Microsoft.Compute/virtualMachines/$VM"
+
+
+## Creating the Batch Account.
+- Prerequisite: 
+    * Register the subscription with the compute batch by running the command
+        ```az provider register --namespace Microsoft.Batch```
+    
+    * Monitor using ```az provider show -n Microsoft.Batch```
+
+#### Execute Terraform to create the Batch 
+```terraform init --upgrade```
+
+#### run Terrafomr plan
+```terraform plan -out main.tfplan```
+
+#### Apply the plan if all is good
+```terraform apply main.tfplan```
