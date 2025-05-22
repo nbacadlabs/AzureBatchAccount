@@ -6,7 +6,21 @@ Prerequisite:
 -	VM is deallocated
 -	VM is generalized
 Note: when creating VMs for generalization, [Standard Security Type] is the best and recommended option.
-	 
+
+### What we are going to do 
+Quick summary of the order:
+
+    Create VM
+
+    Install and configure all apps, dependencies, updates, etc.
+
+    Test everything works as expected
+
+    Run sudo waagent -deprovision+user -force (Linux) or sysprep (Windows)
+
+    Deallocate and generalize the VM (az vm deallocate + az vm generalize)
+
+    Capture the image or create the Shared Image Gallery version
 
 ### initiate the image creation process
 1.	Run either locally or in azure cli

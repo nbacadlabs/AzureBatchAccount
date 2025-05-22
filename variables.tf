@@ -12,32 +12,32 @@ variable "resource_group_name_prefix" {
 
 variable "storage_account_name" {
   type        = string
-  default     = "nbBatchAcc-SA"
+  default     = "nbbatchaccsa"
   description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
 }
 
 variable "batch_account_name" {
   type        = string
-  default     = "nbBatchAcc"
+  default     = "nbbatchacc"
   description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
 }
 
 variable "batch_account_pool" {
   type        = string
-  default     = "nbBatchAcc-pool"
+  default     = "nbbatchacc-pool"
   description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
 }
 
 variable "batch_account_autopool" {
   type        = string
-  default     = "nbBatchAcc-autopool"
+  default     = "nbbatchaccautopool"
   description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
 }
 
 
 variable "resource_group_name" {
   type        = string
-  default     = "nbBatchAcc-RG"
+  default     = "nbbatchaccrg"
   description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
 }
 
