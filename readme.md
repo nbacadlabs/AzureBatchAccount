@@ -1,5 +1,5 @@
 
-## Image gallery creation#
+## Image gallery creation##
 
 Prerequisite: 
 -	VM is created 
