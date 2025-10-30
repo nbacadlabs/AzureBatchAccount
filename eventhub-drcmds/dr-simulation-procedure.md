@@ -132,3 +132,18 @@ az eventhubs georecovery-alias show \
 > 1. No manual DNS change is needed. The alias endpoint remains the same
 > 2. You can't failback directly; you must recreate the pairing
 > 3. Ensure both namespaces are in the same Azure region pair (e.g. Canada Central <-> Canada East)
+
+
+### Creating Namespaces using the portal
+<table>
+<thead>
+<th>Image</th><th align="center">Description</th>
+</thead>
+
+<tr>
+<td width="70%"><img src="images/step1.png" ></td>
+<td></td>
+</tr>
+
+</table>
+
